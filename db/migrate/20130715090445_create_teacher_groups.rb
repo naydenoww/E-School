@@ -4,8 +4,6 @@ class CreateTeacherGroups < ActiveRecord::Migration
       t.integer :group_id
 
       t.timestamps
-
-      rename_table :teacher_groups, :teacher_student_groups
       
     end
   end

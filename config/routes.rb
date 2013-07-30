@@ -1,6 +1,24 @@
 ESchool::Application.routes.draw do
+
+  #root :to => 'controller#index'
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+
+  
+#for javascript 
+  #match '/url', to: 'controller#action', via: [:post]
+ #match '/url', to: 'controller#action', via: [:post, :get]
+  #match '/url', to: 'controller#action', via: [:get]
+
+#matching
+ #match '/url', to: 'controller#action'
+ #BY variable
+  #get '/url/:id', to: 'controller#action'
+  #get '/url/:nane', to: 'controller#action'
+
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
